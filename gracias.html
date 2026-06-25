@@ -1,12 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Solicitud enviada</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solicitud enviada | BOA Security</title>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fb;
+      color: #16213e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+    }
+
+    .thank-you-card {
+      background: #ffffff;
+      max-width: 620px;
+      width: 100%;
+      padding: 50px 40px;
+      border-radius: 22px;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+      text-align: center;
+      border: 1px solid #e5e7eb;
+    }
+
+    .icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: #d94b3d;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 38px;
+      font-weight: bold;
+      margin: 0 auto 24px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 0 0 16px;
+      color: #16213e;
+      letter-spacing: -1px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #5b6475;
+      margin: 0 0 32px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #d94b3d;
+      color: white;
+      text-decoration: none;
+      padding: 15px 28px;
+      border-radius: 999px;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      background: #b93a2f;
+      transform: translateY(-2px);
+    }
+
+    .small-text {
+      margin-top: 22px;
+      font-size: 14px;
+      color: #8a94a6;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>¡Solicitud enviada!</h1>
-  <p>Gracias por contactarnos. Te responderemos en menos de 24 horas.</p>
-  <a href="/">Volver al inicio</a>
+  <main class="thank-you-card">
+    <div class="icon">✓</div>
+
+    <h1>¡Solicitud enviada!</h1>
+
+    <p>
+      Gracias por contactarnos. Hemos recibido tu solicitud correctamente.
+      Te responderemos en menos de 24 horas.
+    </p>
+
+    <a href="/" class="btn">Volver al inicio</a>
+
+    <div class="small-text">
+      BOA Security · Instalación de cámaras y sistemas de seguridad
+    </div>
+  </main>
 </body>
 </html>
