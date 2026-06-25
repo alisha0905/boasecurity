@@ -49,28 +49,4 @@ document.addEventListener('DOMContentLoaded', () => {
   // ---- Footer year ----
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-  // ---- Contact form ----
-  const form = document.getElementById('contactForm');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-
-      const name = document.getElementById('name').value.trim();
-      const phone = document.getElementById('phone').value.trim();
-      const type = document.getElementById('type').value;
-      const message = document.getElementById('message').value.trim();
-
-      // Build a WhatsApp message — replace the number below with the real business number
-      const whatsappNumber = '18095550123'; // sin '+', sin espacios
-      const text = encodeURIComponent(
-        `Hola BOA Security, soy ${name}.\nTeléfono: ${phone}\nTipo de propiedad: ${type}\nMensaje: ${message || 'Quisiera más información.'}`
-      );
-
-      window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
-
-      form.reset();
-    });
-  }
-
 });
